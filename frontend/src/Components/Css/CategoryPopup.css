@@ -1,0 +1,9 @@
+.category-input {
+  width: 95%;
+  border-radius: 8px;
+  border: 1px solid #cbcbcb;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding: 11px 10px;
+  margin: 0 2.5%;
+}

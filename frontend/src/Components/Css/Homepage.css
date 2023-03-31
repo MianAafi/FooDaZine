@@ -1,0 +1,344 @@
+.Header {
+  background-color: rgb(250, 250, 250);
+  padding: 75px 0px;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.Heading {
+  padding-top: 50px;
+  color: #252525;
+  font-size: 28px;
+  font-family: 'Poppins', Sans-serif;
+  font-weight: bold;
+}
+
+.header-h1 {
+  color: #ef6742;
+}
+.Header2 {
+  font-size: 22px;
+  padding-top: 30px;
+  font-family: 'Poppins', Sans-serif;
+}
+.Header-btn {
+  background-color: #ef6742;
+  color: white;
+  font-size: 13px;
+  font-family: 'Poppins', Sans-serif;
+  padding: 10px 20px;
+  border: none;
+}
+.Header-p {
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 10px;
+  font-family: 'Poppins', Sans-serif;
+}
+.Header-img > img {
+  width: 100%;
+}
+.Header-btn {
+  margin-top: 90px;
+}
+.AboutOurServices {
+  font-family: 'Poppins', Sans-serif;
+  margin: 70px 0;
+  justify-content: space-around;
+}
+.AboutService {
+  font-size: 28px;
+  font-weight: bold;
+}
+.divider {
+  background-color: #ef6742;
+  width: 130px;
+  height: 4px;
+}
+.Paragraph {
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', Sans-serif;
+}
+.button-text {
+  color: #ef6742;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Poppins', Sans-serif;
+}
+.RegisterQr-img > img {
+  width: 100%;
+}
+.RegisterScanQr {
+  margin: 100px 0;
+  justify-content: space-around;
+}
+.RegisterScanQr-h1 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Poppins', Sans-serif;
+}
+.ParagraphRegister {
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', Sans-serif;
+}
+.CreateMenu {
+  justify-content: space-around;
+  background-color: rgb(250, 250, 250);
+  padding: 50px 0;
+  margin: 0;
+}
+.CreateYourMenu-h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 5px;
+  font-family: 'Poppins', Sans-serif;
+}
+.CreateYourMenu-p {
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 50px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', Sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .Header {
+    padding: 70px 0;
+  }
+
+  .Heading {
+    padding-top: 20px;
+    font-size: 25px;
+  }
+
+  .Header2 {
+    font-size: 20px;
+  }
+  .Header-btn {
+    font-size: 13px;
+  }
+  .Header-p {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+  .Header-img > img {
+    width: 100%;
+  }
+  .Header-btn {
+    margin-top: 30px;
+  }
+  .AboutService {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .divider {
+    width: 110px;
+    height: 4px;
+  }
+  .Paragraph {
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  .button-text {
+    font-size: 14px;
+  }
+  .RegisterScanQr {
+    margin: 70px 0;
+  }
+  /* RegisterQr-img > img {
+    height: 100%;
+  } */
+  .RegisterScanQr-h1 {
+    font-size: 25px;
+    margin-bottom: 6px;
+  }
+  .ParagraphRegister {
+    font-size: 12px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+  .CreateYourMenu-h1 {
+    font-size: 26px;
+    margin-top: 0px;
+  }
+  .CreateYourMenu-p {
+    font-size: 12px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Header {
+    padding: 60px 0;
+  }
+
+  .Heading {
+    padding-top: 0px;
+    font-size: 23px;
+  }
+
+  .Header2 {
+    font-size: 19px;
+    padding-top: 10px;
+  }
+  .Header-btn {
+    font-size: 12px;
+  }
+  .Header-p {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+  .Header-img > img {
+    width: 100%;
+  }
+  .Header-btn {
+    margin-top: 15px;
+  }
+  .AboutService {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .divider {
+    width: 110px;
+    height: 3px;
+  }
+  .Paragraph {
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+  .button-text {
+    font-size: 13px;
+  }
+  .RegisterScanQr {
+    margin: 80px 0;
+  }
+
+  .ParagraphRegister {
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  .CreateYourMenu-p {
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .Header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .Heading {
+    margin-top: 40px;
+    padding-top: 10px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .Header2 {
+    font-size: 18px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .Header-btn {
+    margin-left: 40%;
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-top: 20px;
+  }
+  .Header-p {
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .Header-img > img {
+    width: 100%;
+  }
+  #Header-img > img {
+    padding: 0px 128px 50px 128px;
+  }
+  .AboutOurServices {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .AboutService {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .divider {
+    width: 170px;
+    height: 4px;
+    margin-top: 15px;
+    margin-left: 40px;
+  }
+  .Paragraph {
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    padding: 0 50px;
+  }
+  .button-text {
+    font-size: 14px;
+    padding-left: 50px;
+  }
+  .RegisterQr-img > img {
+    padding: 0 128px 50px 128px;
+  }
+  .RegisterScanQr {
+    margin: 50px 0;
+  }
+  .RegisterScanQr-h1 {
+    font-size: 22px;
+    margin: 10px 0px 10px 40px;
+  }
+  .CreateYourMenu-h1 {
+    font-size: 22px;
+    margin: 10px 0 10px 40px;
+  }
+  .ParagraphRegister {
+    font-size: 12px;
+    margin: 20px 0;
+    padding: 0 50px;
+  }
+  .CreateMenu {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .CreateYourMenu-p {
+    font-size: 12px;
+    margin: 20px 0;
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Header-img > img {
+    width: 100%;
+    padding: 0 50px;
+  }
+  #Header-img > img {
+    padding: 0px 70px 40px 70px;
+  }
+  .RegisterQr-img > img {
+    padding: 0 70px 40px 70px;
+  }
+  .RegisterScanQr {
+    margin: 40px 0;
+  }
+}

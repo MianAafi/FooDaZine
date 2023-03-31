@@ -1,0 +1,709 @@
+.CoverPicture {
+  width: 100%;
+  height: 400px;
+  background-color: #ef6742;
+  position: relative;
+}
+.CoverPicture > img {
+  width: 100%;
+  height: 400px;
+}
+.CoverPicture > label {
+  background: black;
+  color: black;
+  background-color: #e2e2e2;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  right: 7%;
+  bottom: 4%;
+}
+.restaurantMenu-description {
+  margin: 0 0 10px 0;
+}
+.restaurantMenu-description > i {
+  margin-top: 50px;
+  color: #ef6742;
+  display: flex;
+  justify-content: end;
+}
+.restaurantMenu-description > h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.Restaurant-logo {
+  margin-top: -100px;
+  z-index: 1;
+  position: relative;
+}
+.Restaurant-logo > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+.Restaurant-logo > label {
+  z-index: 1000;
+  padding: 2px 7px;
+  border-radius: 13px;
+  margin-top: 160px;
+  margin-left: -26px;
+  background-color: #e2e2e2;
+}
+.restaurantMenu-description > p {
+  font-size: 16px;
+  padding: 0 50px;
+}
+.AddCategory {
+  padding: 8px 17px;
+  border: 1px solid #ef6742;
+  border-radius: 15px;
+  background-color: #ef6742;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.addFoodItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addFoodItem > button {
+  padding: 10px 25px;
+  border: 1px solid #c85534;
+  background-color: white;
+  color: #c85534;
+  border-radius: 15px;
+  font-size: 25px;
+}
+.food-description {
+  width: 95%;
+  margin-left: 2.5%;
+  padding-left: 8px;
+  border: 1px solid #cbcbcb;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.btn-save {
+  background-color: #ef6742;
+  color: #ffffff;
+  padding: 7px 30px;
+  font-size: 14px;
+}
+.btn-save:hover {
+  background-color: #ef6742;
+  color: #ffffff;
+  border: 1px solid #ef6742;
+}
+.input-food {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0px;
+}
+#close-btn {
+  font-size: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.btn-add {
+  position: absolute;
+  background-color: #ef6742;
+  border: 1px solid #ef6742;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 21px;
+  border-radius: 6px;
+  float: right;
+  right: 70px;
+}
+.CategoryTitle {
+  padding: 20px 135px 0 165px;
+}
+.item-image {
+  margin-left: 19px;
+}
+.btn-save-cancel {
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+.galleyInputImage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 15px;
+}
+
+.inputGalleryImg {
+  margin-top: 10px;
+  width: 100px;
+  border: 1px dashed #cbcbcb;
+  margin-left: 18px;
+}
+.newGalleryImageAdd {
+  border: 1px dashed #cbcbcb;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18px;
+}
+#gImgCross {
+  position: absolute;
+  color: white;
+  margin-left: 80px;
+  margin-top: 5px;
+}
+#CatDrop {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.dropdown-menu .dropdown-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu .dropdown-item:last-child {
+  border-bottom: none;
+}
+.CatDropMenu.show {
+  margin-top: 10px;
+  padding: 0px;
+  margin-left: -145px;
+  --bs-dropdown-min-width: 165px;
+}
+
+.CatDrop:hover {
+  color: #ffffff;
+  background-color: #ef6742;
+}
+.dropdown1 {
+  position: absolute;
+  margin-top: 6px;
+  float: right;
+  right: 0px;
+}
+.QrNav {
+  margin: 0;
+  background-color: #ef6742;
+  height: 350px;
+  padding: 0px 145px;
+  display: flex;
+  justify-content: space-between;
+}
+.QRCode {
+  background-color: white;
+  width: auto;
+  height: auto;
+  outline: white solid 10px;
+}
+.QrButton > h1 {
+  padding-top: 35px;
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+}
+.QrButton > p {
+  padding-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+.QrButton > button {
+  margin-top: 10px;
+  padding: 10px 45px;
+  border: none;
+  font-size: 19px;
+  color: #ef6742;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.CompanyName {
+  font-size: 35px;
+}
+.CompanyDescription {
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .CatDropMenu.show {
+    margin-left: -135px;
+    --bs-dropdown-min-width: 150px;
+  }
+  .btn-add {
+    margin-top: 0px;
+    padding: 8px 16px;
+  }
+  .dropdown1 {
+    right: 0px;
+    margin-top: 6px;
+  }
+
+  .CategoryTitle {
+    padding: 0px 105px;
+  }
+  .QrNav {
+    padding: 0px 135px;
+    height: 320px;
+  }
+  .QRCode {
+    width: 210px;
+  }
+  .QrButton > h1 {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+  .QrButton > p {
+    padding-top: 5px;
+    color: white;
+    font-size: 16px;
+  }
+  .QrButton > button {
+    margin-top: 5px;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .CompanyName {
+    font-size: 32px;
+  }
+  .CompanyDescription {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 992px) {
+  .CatDropMenu.show {
+    margin-left: -125px;
+    --bs-dropdown-min-width: 140px;
+  }
+  #CatDrop {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .CategoryTitle {
+    padding: 0px 30px 0 60px;
+  }
+  .btn-add {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  .restaurantMenu-description > h1 {
+    font-size: 32px;
+  }
+  .CoverPicture > label {
+    background: black;
+    color: black;
+    background-color: #e2e2e2;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    right: 5%;
+    bottom: 4%;
+  }
+  .CoverPicture {
+    height: 300px;
+  }
+  .CoverPicture > img {
+    height: 300px;
+  }
+  .Restaurant-logo {
+    margin-top: -80px;
+  }
+  .Restaurant-logo > img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+  }
+  .Restaurant-logo > label {
+    padding: 1px 6px;
+    border-radius: 12px;
+    margin-top: 125px;
+    margin-left: -19px;
+  }
+  .restaurantMenu-description > p {
+    font-size: 13px;
+    padding: 0 15px;
+  }
+  .btn-style {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .inputGalleryImg {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .galleyInputImage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0 10px;
+  }
+  .QrNav {
+    padding: 0px 60px;
+    height: 280px;
+  }
+  .QRCode {
+    width: 200px;
+  }
+  .QrButton > h1 {
+    padding-top: 50px;
+    font-size: 27px;
+  }
+  .QrButton > p {
+    font-size: 14px;
+  }
+  .QrButton > button {
+    margin-top: 10px;
+    padding: 6px 30px;
+    font-size: 16px;
+    color: #ef6742;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+  .dropdown1 {
+    margin-top: 5px;
+  }
+  .newGalleryImageAdd {
+    margin-left: 5px;
+  }
+  .CatDropMenu {
+    --bs-dropdown-min-width: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .CatDropMenu.show {
+    --bs-dropdown-border-radius: 4px;
+    margin-left: -85px;
+    --bs-dropdown-min-width: 100px;
+  }
+  .Restaurant-logo {
+    margin-top: -60px;
+  }
+  .Restaurant-logo > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+  }
+  .restaurantMenu-description > h1 {
+    font-size: 30px;
+  }
+  .CoverPicture {
+    height: 250px;
+  }
+  .CoverPicture > img {
+    height: 250px;
+  }
+  .CoverPicture > label {
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+  }
+
+  .restaurantMenu-description > p {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  .Restaurant-logo > label {
+    padding: 0px 5px;
+    border-radius: 12px;
+    margin-top: 95px;
+    margin-left: -14px;
+  }
+  .btn-style {
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 2px 10px;
+  }
+  .btn-add {
+    font-size: 11px;
+    /* margin-top: 4px; */
+    padding: 6px 8px;
+    border-radius: 3px;
+    right: 49px;
+  }
+  .dropdown1 {
+    margin-top: 0px;
+  }
+  .dropdown-btn > i {
+    font-size: 34px;
+  }
+  .CategoryTitle {
+    padding: 0px 26px 0 60px;
+  }
+  .dropdown1 {
+    margin-top: 3px;
+  }
+  .QrNav {
+    height: 220px;
+  }
+  .QRCode {
+    outline: white solid 5px;
+    width: 160px;
+  }
+  .QrButton > h1 {
+    padding-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .QrButton > p {
+    padding-top: 0px;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .QrButton > button {
+    margin-top: 0px;
+    padding: 5px 25px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  .AddCategory {
+    margin-bottom: 30px;
+    padding: 8px 15px;
+    font-size: 11px;
+    border-radius: 5px;
+  }
+  #CatDrop {
+    font-size: 11px;
+  }
+  .CompanyName {
+    font-size: 30px;
+  }
+  .CompanyDescription {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .CatDropMenu.show {
+    margin-left: -63px;
+    --bs-dropdown-min-width: 70px;
+  }
+  #CatDrop {
+    font-size: 8px;
+    padding: 4px 7px;
+  }
+  .btn-add {
+    margin-top: 5px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 8px;
+    right: 28px;
+    border-radius: 2px;
+  }
+  .dropdown-btn > i {
+    font-size: 20px;
+  }
+  .dropdown1 {
+    margin-top: 1px;
+  }
+  .CategoryTitle {
+    padding: 0px 7px 0 17px;
+  }
+  .restaurantMenu-description > h1 {
+    font-size: 20px;
+  }
+  .CoverPicture > img {
+    height: 180px;
+  }
+  .CoverPicture {
+    height: 180px;
+  }
+  .CoverPicture > label {
+    padding: 4px 6px;
+    border-radius: 3px;
+    font-size: 8px;
+    right: 4%;
+    bottom: 4%;
+  }
+  .Restaurant-logo {
+    margin-top: -50px;
+  }
+  .Restaurant-logo > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+  .Restaurant-logo > label {
+    padding: 0px 6px;
+    border-radius: 14px;
+    margin-top: 80px;
+    margin-left: -10px;
+  }
+  .restaurantMenu-description > i {
+    margin-top: 30px;
+  }
+  .restaurantMenu-description > h1 {
+    margin-bottom: 15px;
+  }
+  .restaurantMenu-description > p {
+    font-size: 9px;
+    padding: 0 5px;
+  }
+
+  .AddCategory {
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  .inputGalleryImg {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .newGalleryImageAdd {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .galleyInputImage {
+    padding: 0px;
+    /* justify-content: space-around; */
+  }
+  .QrNav {
+    height: 220px;
+    padding: 0px 17px 0 17px;
+  }
+  /* .QRCode {
+    margin-top: 0px;
+    width: 0px;
+  } */
+  .QrButton > h1 {
+    padding-top: 50px;
+    font-size: 17px;
+    margin-bottom: 2px;
+  }
+  .QrButton > p {
+    padding-top: 10px;
+    font-size: 9px;
+    margin-bottom: 5px;
+  }
+  .QrButton > button {
+    margin-top: 0px;
+    padding: 3px 15px;
+    font-size: 10px;
+    border-radius: 4px;
+  }
+  .QRCode {
+    width: 100%;
+  }
+  .CompanyName {
+    font-size: 18px;
+  }
+  .CompanyDescription {
+    font-size: 11px;
+  }
+}
+@media (max-width: 379px) {
+  .QrNav {
+    height: 180px;
+  }
+  .QRCode {
+    width: 90%;
+  }
+  .QrButton > h1 {
+    padding-top: 40px;
+    font-size: 15px;
+  }
+  .QrButton > p {
+    font-size: 8px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+  }
+  .QrButton > button {
+    margin-top: 0px;
+    padding: 3px 10px;
+    font-size: 8px;
+    border-radius: 2px;
+  }
+}
+
+@media (max-width: 349px) {
+  .CatDropMenu.show {
+    margin-top: 5px;
+    margin-left: -50px;
+    --bs-dropdown-min-width: 60px;
+  }
+  #CatDrop {
+    font-size: 7px;
+    padding: 3px 7px;
+  }
+  .CoverPicture > img {
+    height: 125px;
+  }
+  .CoverPicture {
+    height: 125px;
+  }
+  .CoverPicture > label {
+    padding: 3px 2px;
+    border-radius: 2px;
+    font-size: 6px;
+    right: 2%;
+    bottom: 4%;
+  }
+  .inputGalleryImg {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 75px;
+  }
+  .galleyInputImage {
+    padding: 0 5px;
+  }
+  .btn-add {
+    font-size: 8px;
+    padding: 3.5px 4px;
+    border-radius: 2px;
+    right: 24px;
+    font-size: 6px;
+  }
+
+  .dropdown-btn > i {
+    font-size: 18px;
+  }
+  .dropdown1 {
+    margin-top: 0px;
+  }
+  .CategoryTitle {
+    padding: 0px 7px 0 17px;
+  }
+  .dropdown1 {
+    margin-top: 2px;
+  }
+  .QrNav {
+    height: 140px;
+    padding: 0px 19px 0 19px;
+  }
+
+  .QrButton > h1 {
+    padding-top: 30px;
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  .QrButton > p {
+    padding-top: 0px;
+    font-size: 6px;
+    margin-bottom: 0px;
+  }
+  .QrButton > button {
+    margin-top: 0px;
+    padding: 3px 10px;
+    font-size: 7px;
+    border-radius: 2px;
+  }
+  #gImgCross {
+    margin-left: 55px;
+    margin-top: 5px;
+  }
+}

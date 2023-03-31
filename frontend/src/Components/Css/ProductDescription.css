@@ -1,0 +1,172 @@
+.Dish-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.myAccMenu > Link {
+  color: white;
+}
+.Dish-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.Dish-detail > h1 {
+  font-size: 30px;
+}
+.Dish-detail > h4 {
+  color: #ef6742;
+}
+.Dish-detail > p {
+  font-size: 14px;
+}
+.Dish-detail {
+  padding: 0 20px 0 40px;
+}
+.Product-price {
+  margin-top: 40px;
+  font-size: 25px;
+}
+.Product-Review {
+  color: #ef6742;
+  margin-top: 50px;
+  font-size: 22px;
+}
+.icon > i {
+  margin-left: 10px;
+  color: #ef6742;
+}
+.icon-p > i {
+  margin-left: 10px;
+  color: #ef6742;
+  margin-top: 10px;
+}
+.Baking-Serving {
+  display: inline-flex;
+}
+
+.Baking-time {
+  font-size: 15px;
+}
+.Serving {
+  font-size: 15px;
+  margin-left: 50px;
+}
+.Baking-time > i,
+.Serving > i {
+  color: #ef6742;
+  margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  .Dish-info {
+    margin-top: 50px;
+  }
+  .Dish-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .Dish-detail > h1 {
+    font-size: 30px;
+  }
+  .Dish-detail > h4 {
+    color: #ef6742;
+  }
+  .Dish-detail > p {
+    font-size: 14px;
+  }
+  .Dish-detail {
+    padding-right: 10px;
+  }
+  .Product-price {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .Product-Review {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Dish-detail > h1 {
+    font-size: 25px;
+  }
+
+  .Dish-detail > p {
+    font-size: 12px;
+  }
+  .Dish-detail {
+    padding-right: 0px;
+  }
+  .Product-price {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+
+  .Baking-time {
+    font-size: 13px;
+  }
+  .Serving {
+    font-size: 13px;
+  }
+  .Product-Review {
+    margin-top: 13px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Dish-detail > h1 {
+    font-size: 23px;
+  }
+
+  .Dish-detail > p {
+    font-size: 11px;
+  }
+
+  .Product-price {
+    margin-top: 20px;
+  }
+
+  .Baking-time {
+    font-size: 13px;
+  }
+  .Serving {
+    font-size: 13px;
+  }
+  .Product-Review {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Dish-info {
+    margin-top: 10px;
+  }
+  .Dish-detail > h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .Dish-detail > p {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .Dish-detail {
+    padding: 0;
+  }
+  .Product-price {
+    text-align: center;
+  }
+  .Baking-Serving {
+    display: flex;
+    justify-content: center;
+  }
+  .Product-Review {
+    text-align: center;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,522 @@
+body {
+  font-family: 'Poppins', Sans-serif;
+}
+.product-description {
+  padding: 40px 120px 0 120px;
+}
+.Description {
+  position: relative;
+  padding-left: 40px;
+}
+.image {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  height: 563px;
+}
+.image > img {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Food-name {
+  padding-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #252525;
+}
+.Price {
+  padding-top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ef6742;
+}
+
+.Detail {
+  font-size: 16px;
+  padding-top: 20px;
+  color: #252525;
+}
+.ingredients > span {
+  font-size: 15px;
+}
+.ingredients > h1 {
+  font-size: 28px;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+.ingredients > li {
+  font-size: 15px;
+}
+
+.Share-Product {
+  font-size: 18px;
+  padding-top: 20px;
+  color: #c1c1c1;
+}
+
+.description-detail {
+  margin-top: 50px;
+  padding: 0 120px;
+}
+.description-detail > h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.description-detail > p {
+  font-size: 16px;
+  padding-right: 120px;
+}
+.ingredient-list {
+  font-size: 15px;
+}
+.icon > i {
+  margin-left: 10px;
+  color: #ef6742;
+}
+
+.icon-t > i {
+  margin-left: 10px;
+  color: #ef6742;
+}
+.icon-p > i {
+  margin-left: 10px;
+  color: #ef6742;
+  margin-top: 10px;
+}
+.ingredients-p {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+.Gallery-row {
+  margin: 60px 122px 0 122px;
+}
+.Gallery-h {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Poppins', Sans-serif;
+}
+.Gallery-p {
+  color: #c85534;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+}
+#review-description {
+  color: #252525;
+  font-size: 20px;
+}
+#review-description:hover {
+  color: #252525;
+}
+#review-description.active {
+  color: #ef6742;
+  font-weight: 600;
+  padding: 10px 18px 9px;
+}
+
+#description > p {
+  font-size: 14px;
+}
+.btn-addGallery {
+  background-color: #ef6742;
+  border: 1px solid #ef6742;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 21px;
+  border-radius: 6px;
+  float: right;
+}
+.GalleryImages {
+  padding: 0px 7rem;
+  margin: 2rem 0px 8rem;
+  justify-content: space-evenly;
+}
+.imagesOfGallery {
+  position: relative;
+  padding: 10px;
+}
+#gImgCrossDes {
+  z-index: 1;
+  position: absolute;
+  color: white;
+  margin-top: 8px;
+  right: 20px;
+}
+.Galleryimages-size {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 175px;
+}
+.Gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1200px) {
+  .image {
+    height: 475px;
+  }
+  .product-description {
+    padding: 40px 80px 0 80px;
+  }
+  .Price {
+    font-size: 26px;
+    padding-top: 0px;
+  }
+  .Detail {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .ingredients > h1 {
+    font-size: 28px;
+    padding-top: 5px;
+  }
+
+  .ingredients > ol {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  .ingredients > li {
+    font-size: 14px;
+  }
+  .Share-Product {
+    padding-top: 15px;
+    font-size: 16px;
+  }
+  .Food-name {
+    font-size: 28px;
+  }
+  .description-detail {
+    margin-top: 100px;
+    padding: 0 100px;
+  }
+  .description-detail > h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .description-detail > p {
+    font-size: 16px;
+    padding-right: 0px;
+  }
+  .icon > i {
+    margin-left: 10px;
+    color: #ef6742;
+  }
+  .ingredients-p {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .Gallery-h {
+    font-size: 28px;
+  }
+  .Gallery-p {
+    font-size: 17px;
+    padding-top: 10px;
+  }
+  .Galleryimages-size {
+    height: 140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .product-description {
+    padding: 30px 50px 0 50px;
+  }
+  .btn-addGallery {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+  .Gallery-row {
+    margin: 60px 74px 0 74px;
+  }
+  .Price {
+    font-size: 22px;
+    padding-top: 0px;
+  }
+  .Detail {
+    font-size: 12px;
+    padding-top: 5px;
+  }
+  .ingredients > h1 {
+    font-size: 22px;
+    padding-top: 5px;
+  }
+
+  .ingredients > ol {
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  .ingredients > li {
+    font-size: 12px;
+  }
+  .Share-Product {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  .Food-name {
+    font-size: 22px;
+  }
+  .description-detail {
+    margin-top: 100px;
+    padding: 0 60px;
+  }
+  .description-detail > h1 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .description-detail > p {
+    font-size: 16px;
+    padding-right: 0px;
+  }
+  .ingredients-p {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #review-description {
+    font-size: 18px;
+  }
+  #description > p {
+    font-size: 12px;
+  }
+  #review > p {
+    font-size: 12px;
+  }
+  #description {
+    margin: 0px;
+    padding: 0px;
+  }
+  #review {
+    margin: 0px;
+    padding: 0px;
+  }
+  .Gallery-h {
+    font-size: 28px;
+  }
+  .Gallery-p {
+    font-size: 17px;
+    padding-top: 10px;
+  }
+  .GalleryImages {
+    padding: 0px 4rem;
+    margin: 2rem 0px 4rem;
+  }
+
+  .image {
+    height: 375px;
+  }
+  .Galleryimages-size {
+    height: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .product-description {
+    padding: 20px 30px 0 30px;
+  }
+  .image {
+    height: 330px;
+  }
+  .image > img {
+    padding: 0 10px;
+  }
+  .Price {
+    font-size: 18px;
+    padding-top: 0px;
+  }
+  .Detail {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+
+  .ingredients > span {
+    font-size: 12px;
+  }
+  .ingredients > h1 {
+    font-size: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .ingredient-list {
+    font-size: 12px;
+  }
+  .Share-Product {
+    padding-top: 8px;
+    font-size: 14px;
+  }
+  .Food-name {
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+  .Description {
+    padding-left: 30px;
+  }
+  .description-detail {
+    margin-top: 50px;
+    padding: 0 30px;
+  }
+  .description-detail > h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .description-detail > p {
+    font-size: 14px;
+    padding-right: 0px;
+  }
+  .Gallery-row {
+    margin: 60px 39px 0 39px;
+  }
+  .btn-addGallery {
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+  .ingredients-p {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .Gallery-h {
+    font-size: 18px;
+  }
+  .Gallery-p {
+    font-size: 14px;
+    padding-top: 8px;
+  }
+  #review-description {
+    font-size: 16px;
+  }
+  .GalleryImages {
+    padding: 0px 2rem;
+    margin: 1.5rem 0px 3rem;
+  }
+  .imagesOfGallery {
+    padding: 7px;
+  }
+}
+@media (max-width: 630px) {
+  .image {
+    height: 300px;
+  }
+  .Galleryimages-size {
+    height: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .image {
+    width: 100%;
+    height: 570px;
+  }
+  .product-description {
+    padding: 10px 0 0 0;
+  }
+  .Description {
+    padding: 40px 0px 0 40px;
+  }
+  .Food-name {
+    font-size: 24px;
+  }
+  .Price {
+    font-size: 20px;
+  }
+  .ingredients > h1 {
+    font-size: 20px;
+  }
+  .ingredient-list {
+    font-size: 13px;
+  }
+  .Share-Product {
+    margin-top: 7px;
+    font-size: 15px;
+  }
+  #review-description.active {
+    padding: 10px 10px 9px;
+  }
+  #review-description {
+    padding: 10px 10px 9px;
+    font-size: 14px;
+  }
+
+  .ingredients > ul {
+    padding-left: 15px;
+  }
+  .image > img {
+    padding: 0;
+  }
+
+  .GalleryImages {
+    padding: 0px 1.5rem;
+    margin: 1.5rem 0px 3rem;
+  }
+  .imagesOfGallery {
+    padding: 5px;
+  }
+  .Gallery-row {
+    margin: 50px 29px 0 29px;
+  }
+  .btn-addGallery {
+    font-size: 7px;
+    padding: 4px 6px;
+    border-radius: 3px;
+  }
+  #gImgCrossDes {
+    margin-top: 5px;
+    right: 12px;
+  }
+  .Galleryimages-size {
+    height: 150px;
+  }
+}
+@media (max-width: 460px) {
+  .image {
+    height: 450px;
+  }
+  .Description {
+    padding: 40px 0px 0 30px;
+  }
+  .Galleryimages-size {
+    height: 120px;
+  }
+}
+@media (max-width: 380px) {
+  .image {
+    height: 390px;
+  }
+  .Description {
+    padding: 40px 0px 0 20px;
+  }
+  .Galleryimages-size {
+    height: 100px;
+  }
+}
+@media (max-width: 300px) {
+  .image {
+    height: 310px;
+  }
+  .Galleryimages-size {
+    height: 75px;
+  }
+}

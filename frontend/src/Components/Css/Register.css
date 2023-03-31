@@ -1,0 +1,82 @@
+.UpdateProfile-row {
+  display: flex;
+  justify-content: center;
+}
+.Update-Profile {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', Sans-serif;
+}
+.ProfileInput > input {
+  margin-top: 15px;
+  padding: 12px 15px;
+  background-color: #f9f9f9;
+}
+.profile-button {
+  padding: 9px 32px;
+  background-color: #ef6742;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  color: #f9f9f9;
+}
+
+.text-center > a {
+  color: #ef6742;
+  font-size: 16px;
+  font-style: italic;
+}
+.text-center {
+  margin-bottom: 20px;
+}
+.form-control2 {
+  width: 49%;
+  border-radius: 8px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #cbcbcb;
+  margin-right: 2%;
+}
+.form-control3 {
+  width: 49%;
+  border-radius: 8px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #cbcbcb;
+}
+.twitter1 {
+  background-color: #03a9f4;
+  color: white;
+  font-size: 14px;
+  border: none;
+  padding: 9px 27px;
+  border-radius: 6px;
+}
+.facebook1 {
+  background-color: #1976d2;
+  color: white;
+  font-size: 14px;
+  border: none;
+  padding: 9px 21px;
+  border-radius: 6px;
+}
+.google1 {
+  background-color: #f9f9f9;
+  border: none;
+  font-size: 14px;
+  padding: 9px 23px;
+  border-radius: 6px;
+}
+.google1 > img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 576px) {
+  .Update-Profile {
+    font-size: 24px;
+  }
+  .text-center > a {
+    font-size: 14px;
+  }
+}

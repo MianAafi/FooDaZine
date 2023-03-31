@@ -1,0 +1,25 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+.Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ef6742;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  border-top: 1px solid white;
+  padding: 20px 0;
+  margin-bottom: 0px;
+}
+@media (max-width: 576px) {
+  .Footer {
+    font-size: 10px;
+    padding: 15x 0;
+  }
+}
