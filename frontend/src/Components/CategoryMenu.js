@@ -134,6 +134,11 @@ function CategoryMenu(props) {
         console.error(error);
       });
   };
+  const handleKeyDownCat = (e) => {
+    if (e.keyCode === 27) {
+      toggleEditable();
+    }
+  };
 
   const toggleEnabled = async (id) => {
     const item = restaurantCategory.find((item) => item.id === id);
@@ -202,6 +207,7 @@ function CategoryMenu(props) {
               value={Cate_name}
               onChange={(e) => setCategory_name(e.target.value)}
               onBlur={handleSave}
+              onKeyDown={handleKeyDownCat}
             ></input>
           )}
 

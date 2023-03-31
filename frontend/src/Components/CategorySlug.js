@@ -14,6 +14,10 @@ function CategorySlug(props) {
     }
   }, [data]);
 
+  if (categoryItem.length === 0) {
+    return null;
+  }
+
   return (
     <div>
       <div className="row m-0 CategoryTitle">

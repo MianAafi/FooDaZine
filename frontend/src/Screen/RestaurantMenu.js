@@ -171,6 +171,11 @@ function RestaurantMenu() {
         console.error(error);
       });
   };
+  const handleKeyDown2 = (e) => {
+    if (e.keyCode === 27) {
+      toggleEditable2();
+    }
+  };
 
   const toggleEditable = () => {
     setIsEditable((prevIsEditable) => !prevIsEditable);
@@ -195,6 +200,12 @@ function RestaurantMenu() {
         console.error(error);
       });
   };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 27) {
+      toggleEditable();
+    }
+  };
+
   const qrCodeRef = useRef(null);
 
   const downloadQRCode = () => {
@@ -297,6 +308,7 @@ function RestaurantMenu() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     onBlur={handleSave2}
+                    onKeyDown={handleKeyDown2}
                   ></textarea>
                 )}
                 <br />
@@ -348,7 +360,7 @@ function RestaurantMenu() {
                     value={companyDescription}
                     onChange={(e) => setCompanyDescription(e.target.value)}
                     onBlur={handleSave}
-                    // onKeyDown={handleKeyDown}
+                    onKeyDown={handleKeyDown}
                   ></textarea>
                 )}
                 {isEditable && (

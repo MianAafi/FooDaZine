@@ -71,6 +71,9 @@ function DescriptionSlug() {
     event.preventDefault();
     window.history.back();
   };
+
+  const galleryImages = items?.gallery || [];
+  const headingStyle = galleryImages.length > 0 ? {} : { display: 'none' };
   return (
     <div>
       <NavbarSlug />
@@ -168,7 +171,9 @@ function DescriptionSlug() {
       <div className="Container-fluid Gallery">
         <div className="row Gallery-row ">
           <div className="col-12 ">
-            <h1 className="Gallery-h">Gallery images</h1>
+            <h1 className="Gallery-h" style={headingStyle}>
+              Gallery images
+            </h1>
           </div>
         </div>
 
@@ -193,6 +198,7 @@ function DescriptionSlug() {
               );
             })}
         </div>
+
         <div className="col-lg-2 col-md-2 col-sm-2 col-4 wrapper ">
           <div>
             {clickedImg && (
