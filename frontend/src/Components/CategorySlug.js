@@ -13,7 +13,6 @@ function CategorySlug(props) {
       setCategoryItem(data.items);
     }
   }, [data]);
-
   if (categoryItem.length === 0) {
     return null;
   }

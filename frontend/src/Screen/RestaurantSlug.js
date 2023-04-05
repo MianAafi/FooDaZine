@@ -8,33 +8,14 @@ import instance from '../api/instance';
 
 function RestaurantSlug() {
   let { slug } = useParams();
-  const [userDetail, setUserDetail] = useState('');
+  const [userDetail, setUserDetail] = useState({
+    disable: false,
+  });
   const [uploadedImage, setUploadedImage] = useState('images/coverdemo.jpg');
   const [logoPicture, setLogoPicture] = useState('images/logodemo.png');
   const [allCategories, setAllCategories] = useState([]);
-
-  // useEffect(() => {
-  //   if (localStorage.getItem('token')) {
-  //     const user = JSON.parse(localStorage.getItem('token'));
-
-  //     setUserDetail(user);
-  //     setCompanyDescription(user.companyDescription);
-  //     axios
-  //       .get('/category/api/category', {
-  //         headers: {
-  //           Authorization: `x-access-token ${user.token}`,
-  //         },
-  //       })
-  //       .then((response) => {
-  //         setAllCategories(response.data);
-  //       }, []);
-  //   }
-  // }, []);
-
   useEffect(() => {
     instance.get(`/category/api/${slug}`).then((response) => {
-      // console.log(response.data);
-
       setUserDetail(response.data.user);
       setAllCategories(response.data.allitems);
       setUploadedImage(response.data.settings.Coverimage.url);
@@ -42,26 +23,9 @@ function RestaurantSlug() {
     });
   }, [slug]);
 
-  // useEffect(() => {
-  //   if (localStorage.getItem('token')) {
-  //     const user = JSON.parse(localStorage.getItem('token'));
-  //     axios
-  //       .get('/setting/api/setting/logo', {
-  //         headers: {
-  //           Authorization: `x-access-token ${user.token}`,
-  //         },
-  //       })
-  //       .then((response) => {
-  //         const data = response.data;
-  //         if (data.Coverimage) {
-  //           setUploadedImage(data.Coverimage.url);
-  //         }
-  //         if (data.Logoimage) {
-  //           setLogoPicture(data.Logoimage.url);
-  //         }
-  //       }, []);
-  //   }
-  // }, []);
+  if (userDetail.disable) {
+    return null;
+  }
 
   return (
     <div>

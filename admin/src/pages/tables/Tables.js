@@ -24,6 +24,7 @@ import PageTitle from '../../components/PageTitle';
 import instance from '../../components/api/instance';
 import Swal from 'sweetalert2';
 import { Link, useHistory } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
 
 const datatableData = [
   [
@@ -256,10 +257,46 @@ export default function Tables() {
     }
   }
 
-  const toggleEnabled = async (id) => {
+  // const disableRestaurant = async (id, disable) => {
+  //   const actionText = disable ? 'Enable' : 'Disable';
+  //   console.log(actionText);
+  //   Swal.fire({
+  //     title: 'Are you sure?',
+  //     text: `Do you want to ${actionText} this Restaurant?`,
+  //     icon: 'warning',
+  //     showCancelButton: true,
+  //     confirmButtonColor: '#EF6742',
+  //     cancelButtonColor: 'black',
+  //     confirmButtonText: 'Yes',
+  //     cancelButtonText: 'Cancel',
+  //   }).then(async (result) => {
+  //     if (result.isConfirmed) {
+  //       try {
+  //         const response = await instance.put(`/api/restaurant/disable/${id}`);
+  //         const updatedUser = response.data.user;
+  //         setAllRestaurant(
+  //           allRestaurant.map((user) => {
+  //             if (user._id === updatedUser._id) {
+  //               return {
+  //                 ...user,
+  //                 disable: updatedUser.disable,
+  //               };
+  //             } else {
+  //               return user;
+  //             }
+  //           })
+  //         );
+  //       } catch (error) {
+  //         console.log(error);
+  //       }
+  //     }
+  //   });
+  // };
+
+  const disableRestaurant = async (id) => {
     Swal.fire({
       title: 'Are you sure?',
-      text: `Do you want to  this Restaurant?`,
+      text: `Do you want to change this!`,
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#EF6742',
@@ -283,6 +320,27 @@ export default function Tables() {
               }
             })
           );
+          // Fetch restaurant data again to update the table with the latest changes
+          instance
+            .get('/admin/restaurant')
+            .then((response) => {
+              setRestaurantData(response.data);
+              localStorage.setItem(
+                'restaurantData',
+                JSON.stringify(response.data)
+              );
+              const message = updatedUser.disable
+                ? 'Successfully Disabled Restaurant'
+                : 'Successfully Enabled Restaurant';
+              Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: message,
+              });
+            })
+            .catch((error) => {
+              console.log(error);
+            });
         } catch (error) {
           console.log(error);
         }
@@ -313,6 +371,7 @@ export default function Tables() {
           borderRadius: '5px',
           color: '#ffffff',
           marginBottom: '10px',
+          marginRight: '16px',
         }}
         onClick={handleAddDialogOpen}
       >
@@ -322,11 +381,12 @@ export default function Tables() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Company Name</TableCell>
+              <TableCell>Restaurant Name</TableCell>
               <TableCell>Email</TableCell>
               <TableCell>Address</TableCell>
               <TableCell>Mobile</TableCell>
-              <TableCell>Actions</TableCell>
+              <TableCell style={{ textAlign: 'center' }}>Visit</TableCell>
+              <TableCell style={{ textAlign: 'center' }}>Actions</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -336,11 +396,36 @@ export default function Tables() {
                 <TableCell>{restaurant.email}</TableCell>
                 <TableCell>{`${restaurant.address1}`}</TableCell>
                 <TableCell>{restaurant.mobile}</TableCell>
-                <TableCell>
+                <TableCell style={{ textAlign: 'center' }}>
+                  {' '}
+                  <button
+                    style={{
+                      cursor: 'pointer',
+                      borderRadius: '5px',
+                      padding: '10px 15px',
+                      fontSize: ' 14px',
+                      backgroundColor: ' #ef6742',
+                      border: ' none',
+                      color: ' #ffffff',
+                    }}
+                    onClick={() => {
+                      window.open(
+                        // `https://foodazine.xlogicsolutions.com/${restaurant.slug}`,
+                        `http://localhost:3000/${restaurant.slug}`,
+
+                        '_blank'
+                      );
+                    }}
+                  >
+                    View
+                  </button>
+                </TableCell>
+
+                <TableCell style={{ textAlign: 'center' }}>
                   <Button
                     variant="contained"
-                    color={restaurant.disable ? 'default' : 'primary'}
-                    onClick={() => toggleEnabled(restaurant._id)}
+                    color={restaurant.disable ? 'muted' : 'primary'}
+                    onClick={() => disableRestaurant(restaurant._id)}
                   >
                     {restaurant.disable ? 'Disabled' : 'Enabled'}
                   </Button>
